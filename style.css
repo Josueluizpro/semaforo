@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* TOPO */
+header {
+  background: linear-gradient(90deg, #4f4f4f, #2e2e2e);
+  color: white;
+  padding: 25px 10px;
+  border-bottom: 5px solid #f7c325;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  text-align: center;
+}
+
+.perfil-topo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #f7c325;
+  object-fit: cover;
+}
+
+.titulo-topo h1 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.titulo-topo p {
+  font-size: 1em;
+  color: #f7c325;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #f7c325;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.intro, .inclusao {
+  background: #fff;
+  border-left: 5px solid #f7c325;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.gallery, .videos {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #4f4f4f;
+  border-bottom: 3px solid #f7c325;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+/* GALERIA DE FOTOS */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.photo-grid figure {
+  background: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.photo-grid figcaption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* RODAPÉ */
+footer {
+  background: #2e2e2e;
+  color: #f7c325;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.perfil-footer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #f7c325;
+  object-fit: cover;
+}
