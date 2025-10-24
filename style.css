@@ -175,7 +175,7 @@ footer {
 /* Container com 3 vídeos lado a lado */
 .video-container-rua {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 🔹 3 vídeos por linha */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* 🔹 3 vídeos por linha */
   gap: 30px;
   justify-items: center;
 }
@@ -211,4 +211,5 @@ footer {
   font-size: 15px;
   color: #333333;
 }
+
 
