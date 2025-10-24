@@ -145,4 +145,70 @@ footer {
   border-radius: 50%;
   border: 2px solid #f7c325;
   object-fit: cover;
+
 }
+
+
+
+/* =========================
+   SEÇÃO DE VÍDEOS - RUA ILUMINADA
+========================= */
+
+.videos-rua {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.videos-rua h2 {
+  font-size: 26px;
+  color: #444444;
+  margin-bottom: 10px;
+}
+
+.videos-rua p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+/* Container com 3 vídeos lado a lado */
+.video-container-rua {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔹 3 vídeos por linha */
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Card de cada vídeo */
+.video-card-rua {
+  background-color: white;
+  border: 3px solid #d4b300; /* 🔸 Borda amarela dourada */
+  box-shadow: 0 4px 8px rgba(128,128,128,0.4); /* 🔹 Sombrinha cinza */
+  border-radius: 15px;
+  width: 90%;
+  max-width: 380px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.video-card-rua:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(128,128,128,0.5);
+}
+
+/* Frame do vídeo */
+.video-card-rua iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  border: 2px solid #cccccc; /* 🔹 Borda cinza leve ao redor do vídeo */
+}
+
+/* Texto abaixo do vídeo */
+.video-card-rua p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333333;
+}
+
